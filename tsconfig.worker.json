@@ -2,7 +2,14 @@
 	"extends": "./tsconfig.node.json",
 	"compilerOptions": {
 		"tsBuildInfoFile": "./node_modules/.tmp/tsconfig.worker.tsbuildinfo",
-		"types": ["vite/client", "./worker-configuration.d.ts"]
+		"types": ["vite/client", "./worker-configuration.d.ts"],
+    "paths": {
+      "$mid/*": ["./src/worker/middleware/*"],
+      "$routes/*": ["./src/worker/routes/*"],
+      "$utils/*": ["./src/utils/*"],
+      "$store/*": ["./src/store/*"],
+      "$types/*": ["./src/types/*"]
+    }
 	},
 	"include": ["src/worker"]
 }

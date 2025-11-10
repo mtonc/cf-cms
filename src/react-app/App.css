@@ -2,7 +2,9 @@
 	max-width: 1280px;
 	margin: 0 auto;
 	padding: 2rem;
-	text-align: center;
+  width: 80%;
+  background: #424242;
+  box-shadow: 1px 1px 6px -2px;
 }
 
 .logo {

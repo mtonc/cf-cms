@@ -20,7 +20,14 @@
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
 		"noFallthroughCasesInSwitch": true,
-		"noUncheckedSideEffectImports": true
+		"noUncheckedSideEffectImports": true,
+
+    "paths": {
+      "$comps/*": ["./src/react-app/components/*"],
+      "$store/*": ["./src/react-app/store/*"],
+      "$types/*": ["./src/types/*"],
+      "$utils/*": ["./src/utils/*"]
+    }
 	},
-	"include": ["src/react-app"]
+	"include": ["src/react-app", "src/types"]
 }
