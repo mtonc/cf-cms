@@ -18,7 +18,7 @@ min-height: 300px;`;
 
 const PostBody = () => { 
   const post = useStore($currentPost);
-  const [body, setBody] = useState(post ?.body ?? '');
+  const [body, setBody] = useState(post?.body ?? '');
   const handleChange = (e: ChangeEvent) => setBody((e.target as HTMLTextAreaElement).value);
   
   $currentPost.listen((p) => setBody(p.body ?? ''));
